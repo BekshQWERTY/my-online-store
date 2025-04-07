@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой книжный магазин</title>
+    <style>
+        body { font-family: Arial; max-width: 800px; margin: 0 auto; }
+        .product { border: 1px solid #ddd; padding: 10px; margin: 10px; float: left; width: 200px; }
+        .cart { background: #f5f5f5; padding: 10px; position: fixed; right: 20px; top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>📚 Книжный магазин</h1>
+    
+    <!-- Товары будут здесь -->
+    <div id="products"></div>
+    
+    <!-- Корзина -->
+    <div class="cart">
+        <h3>Корзина (<span id="cart-count">0</span>)</h3>
+        <button onclick="checkout()">Оформить заказ</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
